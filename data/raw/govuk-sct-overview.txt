@@ -1,0 +1,216 @@
+TITLE: Sickle cell and thalassaemia screening: programme overview
+URL: https://www.gov.uk/sickle-cell-and-thalassaemia-screening-programme-overview
+OWNER: GOV.UK
+LICENCE: Open Government Licence
+POPULATION: UK
+DOWNLOADED: 2026-11-19
+
+Guidance
+Sickle cell and thalassaemia (SCT) screening: programme overview
+Information on the programme, including the screening tests, commissioning, quality assurance, education and training.
+From:
+NHS England
+Published:
+1 January 2013
+Last updated:
+8 July 2024
+            —
+See all updates
+Print this page
+Applies to England
+Public information about
+SCT
+screening
+is available on the
+NHS
+website.
+There are no risks associated with screening for
+SCT
+. It can however provide information that may mean families have to make further important decisions. It is an individual’s choice whether or not to be screened.
+The
+SCT
+screening
+handbook for antenatal laboratories
+and
+handbook for newborn laboratories
+set out interpretation and reporting guidelines related to laboratory processes, including which types of
+carrier states
+to report.
+There is
+guidance on DNA testing for transfused babies
+which sets out the recommendations and processes for offering DNA tests to babies who have had a blood transfusion before newborn blood spot screening.
+The
+screening inequalities strategy
+sets out the commitment to
+reduce inequalities and variation in screening participation
+to help make sure everyone has fair and equal access to services.
+Patient confidentiality in population screening programmes
+explains how and why population screening programmes collect and process data.
+Target population
+Antenatal screening
+Sickle cell disease (
+SCD
+) screening is offered to:
+pregnant women
+fathers
+where antenatal screening shows the mother is a genetic carrier
+SCD
+screening is offered to all pregnant women in
+high prevalence areas
+. This is done using a simple blood test.
+In
+low prevalence areas
+, the
+family origin questionnaire
+(FOQ) is used to determine if a person is likely to be a carrier for
+SCD
+or other haemoglobin disorder.
+All pregnant women are offered screening for thalassaemia.
+All biological fathers are offered screening if the pregnant woman is a genetic carrier for sickle cell disease or thalassaemia.
+There are
+special circumstances
+where additional investigations may be required.
+Newborn screening
+All newborn babies are offered sickle cell screening as part of the
+newborn blood spot screening programme
+, usually when they are 5 days old.
+Conditions screened for
+The programme screens for:
+genetic carriers for sickle cell, thalassaemia and other haemoglobin disorders
+SCD
+thalassaemia
+haemoglobin disorders
+Screening tests
+The following screening tests may be offered:
+a
+blood test
+for pregnant women and fathers
+a
+family origin questionnaire
+(FOQ)
+a
+heel prick
+test for newborn babies
+Evidence base
+SCT
+screening is one of 11
+NHS
+national population screening programmes
+available in England.
+The
+UK National Screening Committee
+(
+UK NSC
+) makes
+recommendations
+to ministers in the 4 UK countries on all aspects of population screening. It ensures that screening provides more benefit than harm, at a reasonable cost to the
+NHS
+.
+Recommendations are based on
+internationally recognised criteria
+and a rigorous
+evidence review process
+.
+There are separate
+UK NSC
+recommendations on:
+SCT
+screening in pregnancy
+SCD
+screening in newborns
+Data and intelligence
+See annual
+data collected from the linked antenatal and newborn
+SCT
+screening programme
+for data up to 31 March 2017.
+For 1 April 2017 to 31 March 2021 data, see the
+joint antenatal screening standards data report
+.
+For 1 April 2021 to 31 March 2022 data and onwards see
+our data collection page for Sickle cell and thalassaemia screening (
+SCT
+) standards reports
+Key performance indicator (
+KPI
+) data reports
+are available for all 11 national screening programmes.
+Requests for screening data and research
+All requests for
+SCT
+screening data need to be approved by
+the antenatal and newborn (
+ANNB
+) screening research advisory committee (RAC)
+.
+See the
+terms of reference for
+NHS
+population screening programme RACs
+.
+Commissioning
+The
+SCT
+screening pathway requirements specification
+provides an overview of
+SCT
+screening by describing what should happen at each stage of the end-to-end pathway. Providers and commissioners should use this to ensure high quality and consistent screening services.
+Quality assurance
+Guidance is available on the
+SCT
+programme’s processes for ensuring a
+seamless and safe screening pathway
+.
+The
+programme specific operating model
+for quality assurance of the
+SCT
+programme should be read in conjunction with the latest
+SQAS operating model
+and the relevant
+programme standards
+.
+There are
+guidelines on handling patient information
+about how to use and safeguard personal data in screening.
+Workforce – education and training
+Training and continuing professional development (
+CPD
+)
+resources are available for people working in
+SCT
+screening in England.
+There are also more
+general resources to support screening professionals
+in their initial training and
+CPD
+.
+There is a visual representation of the
+SCT
+screening care pathways
+.
+Contact the screening team
+NHS
+England screening
+Wellington House
+133-155 Waterloo Road
+London
+SE1 8UG
+Read our
+leaflet on screening tests for you and your baby and find out how to request alternative formats
+on GOV.UK.
+We cannot help with media enquiries or access screening results.
+Updates to this page
+Last updated:
+8 July 2024
+Show all updates
+8 July 2024
+Replaced PHE contact information with NHS England, as lead organisation.
+17 August 2023
+Updated information for 2021/22 annual data return in the data and intelligence section
+1 January 2013
+First published.
+Sign up for emails or print this page
+Print this page
+Contents
+Related content

@@ -1,0 +1,21 @@
+id,title,url,owner,type,licence,population
+nhs-scd,Sickle cell disease,https://www.nhs.uk/conditions/sickle-cell-disease/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-priapism,Priapism (painful erections),https://www.nhs.uk/symptoms/priapism-painful-erections/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-transfusion,Blood transfusion,https://www.nhs.uk/tests-and-treatments/blood-transfusion/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-stemcell,Stem cell and bone marrow transplants,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-pregnancy-screening,Screening for sickle cell and thalassaemia in pregnancy,https://www.nhs.uk/pregnancy/your-pregnancy-care/screening-for-sickle-cell-and-thalassaemia/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-newborn-bloodspot,Newborn blood spot test,https://www.nhs.uk/baby/newborn-screening/blood-spot-test/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-dehydration,Dehydration,https://www.nhs.uk/conditions/dehydration/,NHS,html,Open Government Licence (NHS website terms),UK
+govuk-sct-overview,Sickle cell and thalassaemia screening: programme overview,https://www.gov.uk/sickle-cell-and-thalassaemia-screening-programme-overview,GOV.UK,html,Open Government Licence,UK
+govuk-know-the-facts,Know the facts: sickle cell and screening,https://assets.publishing.service.gov.uk/media/5a7f7526e5274a2e8ab4c4d3/SCT6_know_the_facts_sickle_cell_leaflet_October_2016_final.pdf,GOV.UK,pdf,Open Government Licence,UK
+nice-cg143,Sickle cell disease: managing acute painful episodes in hospital (recommendations),https://www.nice.org.uk/guidance/cg143/chapter/Recommendations,NICE,html,NICE UK Open Content Licence (do not reword),UK
+nice-ta1044,Exagamglogene autotemcel for severe sickle cell disease (recommendations),https://www.nice.org.uk/guidance/ta1044/chapter/1-Recommendations,NICE,html,NICE UK Open Content Licence (do not reword),UK
+medlineplus-genetics-scd,Sickle cell disease (genetics),https://medlineplus.gov/genetics/condition/sickle-cell-disease/,US National Library of Medicine,html,US government work,US
+nhlbi-scd,Sickle cell disease,https://www.nhlbi.nih.gov/health-topics/sickle-cell-disease,NHLBI (US NIH),html,US government work,US
+cdc-scd,Sickle cell disease,https://www.cdc.gov/sickle-cell/,CDC,html,US government work,US
+nhs-stemcell-what,Stem cell transplant: what it is,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/what-it-is/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-stemcell-why,Stem cell transplant: why it's done,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/why-its-done/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-stemcell-prep,Stem cell transplant: preparation,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/preparation/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-stemcell-how,Stem cell transplant: how it's done,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/how-its-done/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-stemcell-recovery,Stem cell transplant: recovery,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/recovery/,NHS,html,Open Government Licence (NHS website terms),UK
+nhs-stemcell-complications,Stem cell transplant: complications,https://www.nhs.uk/tests-and-treatments/stem-cell-or-bone-marrow-transplants/complications/,NHS,html,Open Government Licence (NHS website terms),UK
