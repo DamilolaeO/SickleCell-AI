@@ -47,7 +47,7 @@ class Source(BaseModel):
 
 
 class Answer(BaseModel):
-    type: str          # "answer", "emergency", "dose_refusal" or "dont_know"
+    type: str          # "answer", "emergency", "crisis_support", "dose_refusal" or "dont_know"
     answer: str
     sources: list[Source]
 
@@ -66,6 +66,8 @@ def ask_question(q: Question):
 
     if text == ask.EMERGENCY_MESSAGE:
         kind = "emergency"
+    elif text == ask.CRISIS_SUPPORT_MESSAGE:
+        kind = "crisis_support"
     elif text == ask.DOSE_MESSAGE:
         kind = "dose_refusal"
     elif text == ask.DONT_KNOW_MESSAGE:

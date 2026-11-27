@@ -52,6 +52,22 @@ DONT_KNOW_MESSAGE = (
     "The NHS sickle cell pages are also a good place to read more: "
     "https://www.nhs.uk/conditions/sickle-cell-disease/"
 )
+# NEEDS CLINICAL SIGN-OFF before real users see it. Phone numbers checked 26 Nov 2026:
+# re-check them against each service's own website before launch.
+# Suicide or self-harm words. Treated like an emergency.
+CRISIS_SUPPORT_MESSAGE = (
+    "I'm really sorry you're feeling like this. You don't have to cope with it on your own, "
+    "and help is there right now.\n\n"
+    "If you or someone else is in danger now, or might act on these thoughts, call 999 or go "
+    "to A&E.\n\n"
+    "You can talk to someone now, day or night:\n"
+    "  - Call NHS 111 and choose the mental health option\n"
+    "  - Call Samaritans free on 116 123\n"
+    "  - Text SHOUT to 85258\n"
+    "  - If you're under 19, call Childline free on 0800 1111\n\n"
+    "If you're outside the UK, call your local emergency number.\n\n"
+    "Please don't wait for an answer from this app."
+)
 
 # Fixed NHS wording, added to any answer that touches urgent symptoms. Never written by the AI.
 # Source: https://www.nhs.uk/conditions/sickle-cell-disease/ ("Call 999" section)
@@ -110,6 +126,25 @@ DOSE_PATTERNS = (
 )
 DOSE_IN_ANSWER = r"\b\d+(\.\d+)?\s?(mg|mcg|micrograms?|ml|g|grams?|tablets?|capsules?)\b|mg/kg"
 
+# Suicide or self-harm. Checked straight after the 999 rules and BEFORE the dose check.
+# No "general question" exemption: "Can sickle cell make you suicidal?" also gets this message.
+CRISIS_RULES = {
+    "suicide": [r"suicid|kill(ing)? (my|him|her|them)sel(f|ves)|end(ing)? (my|his|her|their) (own )?life|"
+                r"end it all|take (my|his|her) (own )?life|wants? to die|wanna die|"
+                r"wish (i|he|she) (was|were|wasn'?t|weren'?t) (dead|alive|here|born)|"
+                r"better off (dead|without (me|him|her|them))|"
+                r"(what'?s|no|any|is there a) (the )?point (in|of) (living|life|being alive|going on)|"
+                r"no (reason|point) (to|in) (live|living|being alive)|"
+                r"don'?t want to (live|be alive|be here|wake up)|can'?t go on|"
+                r"not worth living|life isn'?t worth"],
+    "self_harm": [r"self[- ]?harm|harm(ing)? (my|him|her)sel(f|ves)|"
+                  r"cut(ting)? (my|him|her)sel(f|ves)|hurt(ing)? (my|him|her)self on purpose|"
+                  r"(want|thoughts? of|thinking (of|about)|feel like) hurting (my|him|her)self|"
+                  r"overdose on purpose|(going to|gonna|want to|wanna|will|i'?ll) overdose|"
+                  r"(going to|gonna|want to|wanna|will|i'?ll) take (all|lots) (of )?(my|his|her|the) "
+                  r"(tablets|pills|meds|medicines?)"],
+}
+
 
 def emergency_rule(q):
     """Return the name of the first emergency rule that matches, or None."""
@@ -118,6 +153,12 @@ def emergency_rule(q):
         if all(re.search(g, text) for g in groups):
             return name
     return None
+
+
+def is_crisis(q):
+    """Suicide or self-harm words. Every word group of a rule must appear, like the 999 rules."""
+    text = q.lower().replace("’", "'")
+    return any(all(re.search(g, text) for g in groups) for groups in CRISIS_RULES.values())
 
 
 def is_emergency(q):
@@ -156,6 +197,8 @@ def llm_says_emergency(question, llm):
 def reply_type(text):
     if text == EMERGENCY_MESSAGE:
         return "emergency"
+    if text == CRISIS_SUPPORT_MESSAGE:
+        return "crisis_support"
     if text == DOSE_MESSAGE:
         return "dose_refusal"
     if text == DONT_KNOW_MESSAGE:
@@ -297,6 +340,9 @@ def answer(question, embedder, collection, llm):
     # Layer 1: word rules (instant). Then doses. Layer 2: AI yes/no emergency check.
     if is_emergency(question):
         return EMERGENCY_MESSAGE, []
+    # Suicide or self-harm: straight after the 999 rules, before doses ("how many pills to...")
+    if is_crisis(question):
+        return CRISIS_SUPPORT_MESSAGE, []
     if asks_for_dose(question):
         return DOSE_MESSAGE, []
     if llm_says_emergency(question, llm):

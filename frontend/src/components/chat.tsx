@@ -93,12 +93,35 @@ function BotReply({ reply }: { reply: Reply }) {
   switch (reply.type) {
     case "emergency":
       return <EmergencyAlert text={reply.answer} />;
+    case "crisis_support":
+      return <CrisisSupport text={reply.answer} />;
     case "dose_refusal":
     case "dont_know":
       return <Signpost text={reply.answer} />;
     default:
       return <Answer text={reply.answer} sources={reply.sources} />;
   }
+}
+
+// Suicide or self-harm: red alert like the emergency one, with 999, Samaritans and Shout buttons
+function CrisisSupport({ text }: { text: string }) {
+  return (
+    <div role="alert" className="rounded-xl border-2 border-red-700 bg-red-50 p-5 text-red-950">
+      <p className="text-xl font-bold">You don&apos;t have to cope with this alone</p>
+      <p className="mt-3 whitespace-pre-line">{text}</p>
+      <div className="mt-4 flex flex-wrap gap-3">
+        <a href="tel:999" className="rounded-lg bg-red-700 px-5 py-3 text-lg font-bold text-white hover:bg-red-800">
+          Call 999
+        </a>
+        <a href="tel:116123" className="rounded-lg border-2 border-red-700 px-5 py-3 text-lg font-bold text-red-800 hover:bg-red-100">
+          Call Samaritans 116 123
+        </a>
+        <a href="sms:85258?body=SHOUT" className="rounded-lg border-2 border-red-700 px-5 py-3 text-lg font-bold text-red-800 hover:bg-red-100">
+          Text SHOUT to 85258
+        </a>
+      </div>
+    </div>
+  );
 }
 
 // Emergency: big red alert with 999 and 111 buttons
